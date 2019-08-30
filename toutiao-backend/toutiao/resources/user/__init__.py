@@ -2,7 +2,7 @@ from flask import Blueprint
 from flask_restful import Api
 
 from . import passport
-from . import following
+# from . import following
 # from . import following, channel, blacklist, profile, figure
 from utils.output import output_json
 

@@ -6,7 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/im" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/common" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Remote Python 3.6.7 (sftp://root@192.168.136.139:22/home/python/.virtualenvs/toutiao/bin/python)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.6.7 (sftp://root@192.168.136.139:22/home/python/.virtualenvs/toutiao/bin/python3)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Bundled Protobuf Distribution" level="application" />
   </component>

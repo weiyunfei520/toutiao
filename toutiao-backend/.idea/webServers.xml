@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="4b29fcff-8ce1-4a6c-82ca-6955f70227b5" name="toutiaoweb" url="http://192.168.136.139">
+      <webServer id="bbfc13ed-5c49-41a3-be57-ab5df019e616" name="toutiaoweb" url="http://192.168.136.139">
         <fileTransfer host="192.168.136.139" port="22" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />

@@ -44,8 +44,8 @@ class AuthorizationResource(Resource):
     认证
     """
     method_decorators = {
-        'post': [set_db_to_write],
-        'put': [set_db_to_read]
+        # 'post': [set_db_to_write],
+        # 'put': [set_db_to_read]
     }
 
     def _generate_tokens(self, user_id, with_refresh_token=True):
@@ -55,7 +55,22 @@ class AuthorizationResource(Resource):
         :return: token, refresh_token
         """
         # 颁发JWT
-        pass
+        # 生成2小时有效的token
+        payload = {'user_id': user_id, 'refresh': False}  # token内容
+        secret_key = current_app.config['JWT_SECRET']  # 秘钥
+        expiry = datetime.utcnow() + timedelta(hours=current_app.config['JWT_EXPIRY_HOURS'])
+        token = generate_jwt(payload, expiry, secret=secret_key)
+
+        refresh_token = None
+        if with_refresh_token: # 生成长效token
+            # 生成过期时间14天
+            expiry = datetime.utcnow() + timedelta(days=current_app.config['JWT_REFRESH_DAYS'])
+            # token内容
+            payload = {'user_id': user_id, 'refresh': True}
+            refresh_token = generate_jwt(payload, expiry, secret=secret_key)
+
+        return token, refresh_token
+
 
     def post(self):
         """
@@ -104,13 +119,17 @@ class AuthorizationResource(Resource):
         return {'token': token, 'refresh_token': refresh_token}, 201
 
 
-
-
-
-
-
-
-
-
-
-
+    # 补充put函数, 用于更新token
+    def put(self):
+        """
+        刷新token
+        :return:  {message:OK, data:{token: 2小时有效token}}
+        """
+        # 如果存在user_id,并且是15天的refresh_token,说明需要刷新2小时有效token
+        if g.user_id is not None and g.is_refresh_token is not False:
+            # token, _ = ... 此时不需要is_refresh_token
+            token, _ = self._generate_tokens(g.user_id, with_refresh_token=False)
+            return {'token': token}, 201
+        else:
+            # 返回403, 通知客户端让用户重新登录
+            return {'message': 'Wrong refresh token.'}, 403
