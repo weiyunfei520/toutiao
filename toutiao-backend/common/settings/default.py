@@ -62,7 +62,7 @@ class DefaultConfig(object):
     QINIU_ACCESS_KEY = 'PgUNGf4ltLK3r0ABW4V7xOYg42FouQOrAh2iU_SK'
     QINIU_SECRET_KEY = 'IjN2YuUuBwBjs4rEDavCJjqj4tfFs97lDJBPj33s'
     QINIU_BUCKET_NAME = 'py_43_toutiao'
-    QINIU_DOMAIN = 'http://toutiao.meiduo.site/'
+    QINIU_DOMAIN = 'http://px1h3k7zg.bkt.clouddn.com/'
 
     RABBITMQ = 'amqp://python:rabbitmqpwd@localhost:5672/toutiao'
 

@@ -1,6 +1,7 @@
 from flask import Blueprint
 from flask_restful import Api
 
+from . import profile
 from . import passport
 # from . import following
 # from . import following, channel, blacklist, profile, figure
@@ -51,6 +52,6 @@ user_api.add_resource(passport.AuthorizationResource, '/v1_0/authorizations',
 #
 # user_api.add_resource(figure.FigureResource, '/v1_0/user/figure',
 #                       endpoint='Figure')
-#
-# user_api.add_resource(profile.PhotoResource, '/v1_0/user/photo',
-#                       endpoint='Photo')
+
+user_api.add_resource(profile.PhotoResource, '/v1_0/user/photo',
+                      endpoint='Photo')
