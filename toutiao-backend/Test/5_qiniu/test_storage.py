@@ -9,14 +9,14 @@ def upload_image(file_data):
     :return: file_name
     """
     # 需要填写Access Key和Secret Key
-    access_key = current_app.config['QINIU_ACCESS_KEY']
-    secret_key = current_app.config['QINIU_SECRET_KEY']
+    a_key = 'PgUNGf4ltLK3r0ABW4V7xOYg42FouQOrAh2iU_SK'
+    s_key = 'IjN2YuUuBwBjs4rEDavCJjqj4tfFs97lDJBPj33s'
 
     # 构建鉴权对象
-    q = Auth(access_key, secret_key)
+    q = Auth(a_key, s_key)
 
     # 要上传的空间
-    bucket_name = current_app.config['QINIU_BUCKET_NAME']
+    bucket_name = 'py_43_toutiao'
 
     # 上传到七牛云后保存的文件名
     # key = 'my-python-七牛.png'
@@ -30,8 +30,8 @@ def upload_image(file_data):
 
     # ret, info = put_file(token, key, localfile)
     ret, info = put_data(token, key, file_data)
-    print(ret)
-    print(info)
+    # print(ret)
+    # print(info)
 
     # if is_py2:
     #     assert ret['key'].encode('utf-8') == key
@@ -40,3 +40,6 @@ def upload_image(file_data):
     #
     # assert ret['hash'] == etag(localfile)
     return ret['key']
+
+ret = upload_image('./111.jpg')
+print(ret)
