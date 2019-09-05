@@ -3,6 +3,7 @@ from flask_restful import Api
 
 # from . import article, collection, liking, dislike, report, comment, channel, reading
 from utils.output import output_json
+from . import article
 
 
 news_bp = Blueprint('news', __name__)
@@ -13,9 +14,9 @@ news_api.representation('application/json')(output_json)
 # news_api.add_resource(article.ArticleResource, '/v1_0/articles/<int(min=1):article_id>',
 #                       endpoint='Article')
 #
-# # news_api.add_resource(article.ArticleListResource, '/v1_0/articles',
-# #                       endpoint='Articles')
-#
+news_api.add_resource(article.ArticleListResource, '/v1_0/articles',
+                      endpoint='Articles')
+
 # news_api.add_resource(article.ArticleListResourceV1D1, '/v1_1/articles',
 #                       endpoint='ArticlesV1_1')
 #

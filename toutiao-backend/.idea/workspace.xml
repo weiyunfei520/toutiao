@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="920ff3cd-e1ae-48db-8b02-ad8cc9761b7b" name="Default Changelist" comment="七牛云上传图片文件">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/5_qiniu/test_upload_api.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/toutiao/resources/user/profile.py" />
+    <list default="true" id="920ff3cd-e1ae-48db-8b02-ad8cc9761b7b" name="Default Changelist" comment="上传头像图片代码">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/6-cache/test_cache.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/cache/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/cache/constants.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/cache/user.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/rpc/reco.proto" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Test/5_qiniu/111.jpg" afterPath="$PROJECT_DIR$/Test/5-qiniu/111.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Test/5_qiniu/test_qiniu.py" afterPath="$PROJECT_DIR$/Test/5-qiniu/test_qiniu.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Test/5_qiniu/test_storage.py" afterPath="$PROJECT_DIR$/Test/5-qiniu/test_storage.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Test/5_qiniu/test_upload_api.py" afterPath="$PROJECT_DIR$/Test/5-qiniu/test_upload_api.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Test/5_qiniu/wm.jpg" afterPath="$PROJECT_DIR$/Test/5-qiniu/wm.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/settings/default.py" afterPath="$PROJECT_DIR$/common/settings/default.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/toutiao/resources/news/__init__.py" afterPath="$PROJECT_DIR$/toutiao/resources/news/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/toutiao/resources/user/__init__.py" afterPath="$PROJECT_DIR$/toutiao/resources/user/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/toutiao/resources/user/profile.py" afterPath="$PROJECT_DIR$/toutiao/resources/user/profile.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,18 +26,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/toutiao_backend$toutiao_app.coverage" NAME="toutiao app Coverage Results" MODIFIED="1553438411670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/toutiao-backend$user.coverage" NAME="user Coverage Results" MODIFIED="1567678762083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/cache" />
     <SUITE FILE_PATH="coverage/toutiao_backend$im.coverage" NAME="im Coverage Results" MODIFIED="1546590689299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/im" />
-    <SUITE FILE_PATH="coverage/toutiao-backend$main.coverage" NAME="main Coverage Results" MODIFIED="1567161191951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/toutiao-backend$main.coverage" NAME="main1 Coverage Results" MODIFIED="1567586980376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/toutiao_backend$MP_Server.coverage" NAME="MP Server Coverage Results" MODIFIED="1551688651312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/toutiao-backend$test_f_01_jwt.coverage" NAME="test_f_01_jwt Coverage Results" MODIFIED="1567074735680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/toutiao_backend$main.coverage" NAME="main Coverage Results" MODIFIED="1543557108270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/schedule" />
     <SUITE FILE_PATH="coverage/toutiao-backend$test_upload_api.coverage" NAME="test_upload_api Coverage Results" MODIFIED="1567161213109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/5_qiniu" />
     <SUITE FILE_PATH="coverage/toutiao_backend$sms_send.coverage" NAME="sms_send Coverage Results" MODIFIED="1542364034988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/utils/dysms" />
+    <SUITE FILE_PATH="coverage/toutiao-backend$test_qiniu.coverage" NAME="test_qiniu Coverage Results" MODIFIED="1567153758565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/5_qiniu" />
+    <SUITE FILE_PATH="coverage/toutiao_backend$toutiao_app.coverage" NAME="toutiao app Coverage Results" MODIFIED="1553438411670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/toutiao-backend$server.coverage" NAME="server Coverage Results" MODIFIED="1567592908532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/rpc" />
+    <SUITE FILE_PATH="coverage/toutiao-backend$test_cache.coverage" NAME="test_cache Coverage Results" MODIFIED="1567679020560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/6-cache" />
+    <SUITE FILE_PATH="coverage/toutiao-backend$client.coverage" NAME="client Coverage Results" MODIFIED="1567598590134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/rpc" />
+    <SUITE FILE_PATH="coverage/toutiao-backend$test_rpc.coverage" NAME="test_rpc Coverage Results" MODIFIED="1567598727537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/8.RPC" />
     <SUITE FILE_PATH="coverage/toutiao_backend$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1543558992253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/schedule" />
+    <SUITE FILE_PATH="coverage/toutiao-backend$main1.coverage" NAME="main1 Coverage Results" MODIFIED="1567678999916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/toutiao-backend$test_storage.coverage" NAME="test_storage Coverage Results" MODIFIED="1567157720016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/5_qiniu" />
     <SUITE FILE_PATH="coverage/toutiao_backend$Toutiao_Server.coverage" NAME="Toutiao Server Coverage Results" MODIFIED="1553260094040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/toutiao-backend$test_qiniu.coverage" NAME="test_qiniu Coverage Results" MODIFIED="1567153758565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/5_qiniu" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -53,100 +69,66 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toutiao/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/cache/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/cache/user.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="93" column="86" lean-forward="false" selection-start-line="93" selection-start-column="86" selection-end-line="93" selection-end-column="86" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="passport.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/toutiao/resources/user/passport.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/toutiao/resources/user/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-675">
-              <caret line="36" column="59" lean-forward="false" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_f_01_jwt.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/test_f_01_jwt.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_qiniu.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/5_qiniu/test_qiniu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/settings/default.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="64" column="54" lean-forward="true" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="storage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/utils/storage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="836">
+              <caret line="46" column="49" lean-forward="false" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="49" />
               <folding>
-                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_storage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/5_qiniu/test_storage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="profile.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/toutiao/resources/user/profile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="863">
-              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="318">
+              <caret line="53" column="46" lean-forward="true" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_upload_api.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Test/5_qiniu/test_upload_api.py">
+      <file leaf-file-name="test_cache.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/6-cache/test_cache.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+            <state relative-caret-position="210">
+              <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -217,14 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/toutiao/resources/notice/imtest.py" />
-        <option value="$PROJECT_DIR$/common/cache/count.py" />
-        <option value="$PROJECT_DIR$/toutiao/resources/news/article.py" />
-        <option value="$PROJECT_DIR$/toutiao/resources/news/channel.py" />
-        <option value="$PROJECT_DIR$/toutiao/resources/notice/announcement.py" />
-        <option value="$PROJECT_DIR$/toutiao/resources/search/history.py" />
-        <option value="$PROJECT_DIR$/toutiao/resources/search/search.py" />
-        <option value="$PROJECT_DIR$/common/cache/constants.py" />
         <option value="$PROJECT_DIR$/toutiao/resources/user/figure.py" />
         <option value="$PROJECT_DIR$/toutiao/resources/user/following.py" />
         <option value="$PROJECT_DIR$/toutiao/resources/user/blacklist.py" />
@@ -246,14 +220,12 @@
         <option value="$PROJECT_DIR$/toutiao/resources/news/comment.py" />
         <option value="$PROJECT_DIR$/common/cache/article.py" />
         <option value="$PROJECT_DIR$/common/toutiao_settings.py" />
-        <option value="$PROJECT_DIR$/common/cache/user.py" />
         <option value="$PROJECT_DIR$/common/rpc/recommend/user_reco_pb2_grpc.py" />
         <option value="$PROJECT_DIR$/mp/resources/news/article.py" />
         <option value="$PROJECT_DIR$/mis/resources/information/article.py" />
         <option value="$PROJECT_DIR$/mis/__init__.py" />
         <option value="$PROJECT_DIR$/common/utils/parser.py" />
         <option value="$PROJECT_DIR$/mp/__init__.py" />
-        <option value="$PROJECT_DIR$/toutiao/resources/news/__init__.py" />
         <option value="$PROJECT_DIR$/toutiao/resources/notice/__init__.py" />
         <option value="$PROJECT_DIR$/toutiao/resources/search/__init__.py" />
         <option value="$PROJECT_DIR$/toutiao/__init__.py" />
@@ -264,10 +236,20 @@
         <option value="$PROJECT_DIR$/Test/5_qiniu/test_qiniu.py" />
         <option value="$PROJECT_DIR$/common/utils/storage.py" />
         <option value="$PROJECT_DIR$/Test/5_qiniu/test_storage.py" />
-        <option value="$PROJECT_DIR$/toutiao/resources/user/__init__.py" />
         <option value="$PROJECT_DIR$/Test/5_qiniu/test_upload_api.py" />
-        <option value="$PROJECT_DIR$/toutiao/resources/user/profile.py" />
         <option value="$PROJECT_DIR$/common/settings/default.py" />
+        <option value="$PROJECT_DIR$/common/rpc/reco.proto" />
+        <option value="$PROJECT_DIR$/common/rpc/server.py" />
+        <option value="$PROJECT_DIR$/common/rpc/client.py" />
+        <option value="$PROJECT_DIR$/toutiao/resources/news/__init__.py" />
+        <option value="$PROJECT_DIR$/toutiao/resources/news/article.py" />
+        <option value="$PROJECT_DIR$/Test/8.RPC/test_rpc.py" />
+        <option value="$PROJECT_DIR$/common/rpc/reco_pb2_grpc.py" />
+        <option value="$PROJECT_DIR$/common/cache/constants.py" />
+        <option value="$PROJECT_DIR$/toutiao/resources/user/__init__.py" />
+        <option value="$PROJECT_DIR$/Test/6-cache/test_cache.py" />
+        <option value="$PROJECT_DIR$/toutiao/resources/user/profile.py" />
+        <option value="$PROJECT_DIR$/common/cache/user.py" />
       </list>
     </option>
   </component>
@@ -302,7 +284,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -397,7 +378,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="settings" />
+              <option name="myItemId" value="cache" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,12 +410,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="5_qiniu" />
+              <option name="myItemId" value="6-cache" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -452,7 +434,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v12.7.0/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v12.7.0/bin/node" />
@@ -485,13 +467,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_upload_api">
-    <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test_cache">
+    <configuration default="false" name="main1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="FLASK_APP" value="toutiao.main.py" />
+        <env name="FLASK_APP" value="toutiao.main" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -505,76 +487,80 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="test_f_01_jwt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="FLASK_APP" value="toutiao.main" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="SDK_HOME" value="sftp://root@192.168.136.139:22/home/python/.virtualenvs/toutiao/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common/rpc" />
       <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
       <module name="toutiao-backend" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/test_f_01_jwt.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/rpc/client.py" />
+      <option name="PARAMETERS" value="-m flask run -h 0.0.0.0" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="test_qiniu" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="test_rpc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="FLASK_APP" value="toutiao.main" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/5_qiniu" />
+      <option name="SDK_HOME" value="sftp://root@192.168.136.139:22/home/python/.virtualenvs/toutiao/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/8.RPC" />
       <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
       <module name="toutiao-backend" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/5_qiniu/test_qiniu.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/8.RPC/test_rpc.py" />
+      <option name="PARAMETERS" value="-m flask run -h 0.0.0.0" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="test_storage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="test_cache" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="FLASK_APP" value="toutiao.main" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/5_qiniu" />
+      <option name="SDK_HOME" value="sftp://root@192.168.136.139:22/home/python/.virtualenvs/toutiao/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/6-cache" />
       <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
       <module name="toutiao-backend" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/5_qiniu/test_storage.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/6-cache/test_cache.py" />
+      <option name="PARAMETERS" value="-m flask run -h 0.0.0.0" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="test_upload_api" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="user" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="FLASK_APP" value="toutiao.main" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/5_qiniu" />
+      <option name="SDK_HOME" value="sftp://root@192.168.136.139:22/home/python/.virtualenvs/toutiao/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common/cache" />
       <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
       <module name="toutiao-backend" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/5_qiniu/test_upload_api.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/cache/user.py" />
+      <option name="PARAMETERS" value="-m flask run -h 0.0.0.0" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -639,17 +625,18 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="FLASK_APP" value="toutiao.main" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="SDK_HOME" value="sftp://root@192.168.136.139:22/home/python/.virtualenvs/toutiao/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
       <module name="toutiao-backend" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="PARAMETERS" value="-m flask run -h 0.0.0.0" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
@@ -792,19 +779,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test_f_01_jwt" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test_qiniu" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test_storage" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test_upload_api" />
+      <item index="0" class="java.lang.String" itemvalue="Python.main1" />
+      <item index="1" class="java.lang.String" itemvalue="Python.client" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test_rpc" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test_cache" />
+      <item index="4" class="java.lang.String" itemvalue="Python.user" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test_upload_api" />
-        <item index="1" class="java.lang.String" itemvalue="Python.main" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test_storage" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test_qiniu" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test_f_01_jwt" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test_cache" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.user" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test_rpc" />
+        <item index="4" class="java.lang.String" itemvalue="Python.client" />
       </list>
     </recent_temporary>
   </component>
@@ -855,13 +842,6 @@
       <workItem from="1553390379571" duration="1789000" />
       <workItem from="1553431826905" duration="6533000" />
       <workItem from="1557502806471" duration="126000" />
-    </task>
-    <task id="LOCAL-00221" summary="fix article id redis bytes bug">
-      <created>1552790764260</created>
-      <option name="number" value="00221" />
-      <option name="presentableId" value="LOCAL-00221" />
-      <option name="project" value="LOCAL" />
-      <updated>1552790764260</updated>
     </task>
     <task id="LOCAL-00222" summary="remove reading history mysql db storage">
       <created>1552791067804</created>
@@ -1199,7 +1179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567158419462</updated>
     </task>
-    <option name="localTasksCounter" value="270" />
+    <task id="LOCAL-00270" summary="上传头像图片代码">
+      <created>1567165026682</created>
+      <option name="number" value="00270" />
+      <option name="presentableId" value="LOCAL-00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1567165026683</updated>
+    </task>
+    <option name="localTasksCounter" value="271" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1216,20 +1203,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1176" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16602316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17429675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293247" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293247" sideWeight="0.4980695" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39962998" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39962998" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1271,7 +1258,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fix mp redis client bug" />
     <MESSAGE value="update flask limit redis storage to redis sentinel" />
     <MESSAGE value="remove ineffective error handler" />
     <MESSAGE value="change user cache implement" />
@@ -1296,7 +1282,8 @@
     <MESSAGE value="fix import bug" />
     <MESSAGE value="add update es indexes" />
     <MESSAGE value="七牛云上传图片文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="七牛云上传图片文件" />
+    <MESSAGE value="上传头像图片代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传头像图片代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1360,94 +1347,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/toutiao/resources/user/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/settings/default.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="85" column="43" lean-forward="false" selection-start-line="85" selection-start-column="43" selection-end-line="85" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/resources/user/passport.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1593">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/article_data.sql" />
-    <entry file="file://$PROJECT_DIR$/common/models/create_db.sql" />
-    <entry file="file://$PROJECT_DIR$/common/models/init.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8176">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/notice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/utils/snowflake/id_worker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1030">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/utils/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/utils/error_handlers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/utils/limiter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/utils/logging.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/utils/output.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/utils/redis_client.py" />
     <entry file="file://$PROJECT_DIR$/mp/resources/user/follower.py" />
     <entry file="file://$PROJECT_DIR$/mp/resources/user/passport.py" />
     <entry file="file://$PROJECT_DIR$/mp/resources/news/article.py" />
@@ -1460,29 +1359,7 @@
     <entry file="file://$PROJECT_DIR$/scripts/generate_test_data.py" />
     <entry file="file://$PROJECT_DIR$/toutiao/resources/user/blacklist.py" />
     <entry file="file://$PROJECT_DIR$/toutiao/resources/user/channel.py" />
-    <entry file="file://$PROJECT_DIR$/toutiao/resources/news/article.py" />
-    <entry file="file://$PROJECT_DIR$/toutiao/resources/notice/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/toutiao/resources/user/figure.py" />
-    <entry file="file://$PROJECT_DIR$/toutiao/resources/news/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/resources/search/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/utils/jwt_util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -1511,18 +1388,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2016.3/system/remote_sources/1070540468/-2096998483/qiniu/auth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="126" column="8" lean-forward="false" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2016.3/system/remote_sources/1070540468/-2096998483/qiniu/compat.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1530,7 +1399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1538,104 +1406,235 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="193" column="4" lean-forward="false" selection-start-line="193" selection-start-column="4" selection-end-line="193" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/5-qiniu/test_qiniu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/5-qiniu/test_storage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/5-qiniu/test_upload_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/settings/testing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/settings/default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1891">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/resources/user/passport.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1770">
+          <caret line="36" column="59" lean-forward="false" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/utils/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2016.3/system/remote_sources/1070540468/-2096998483/flask/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="140" column="8" lean-forward="false" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2016.3/system/remote_sources/1070540468/-2096998483/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="394" column="13" lean-forward="false" selection-start-line="394" selection-start-column="13" selection-end-line="394" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/resources/search/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/resources/notice/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2016.3/system/remote_sources/1070540468/-2096998483/qiniu/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="126" column="8" lean-forward="false" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/utils/storage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/test_f_01_jwt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.qiniu_pythonsdk_hostscache.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/resources/news/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="16" column="49" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/rpc/reco.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="15" column="55" lean-forward="false" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/rpc/reco_pb2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/rpc/reco_pb2_grpc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/rpc/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/8-RPC/test_rpc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/resources/news/article.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="39" column="64" lean-forward="true" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/rpc/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/cache/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/toutiao/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        <state relative-caret-position="458">
+          <caret line="87" column="30" lean-forward="true" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/test_f_01_jwt.py">
+    <entry file="file://$PROJECT_DIR$/toutiao/resources/user/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/resources/user/passport.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-675">
-          <caret line="36" column="59" lean-forward="false" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/toutiao/resources/user/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="890">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="836">
+          <caret line="46" column="49" lean-forward="false" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="49" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/utils/storage.py">
+    <entry file="file://$PROJECT_DIR$/Test/6-cache/test_cache.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/5_qiniu/test_qiniu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="37" />
+        <state relative-caret-position="210">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/5_qiniu/test_storage.py">
+    <entry file="file://$PROJECT_DIR$/common/cache/user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+        <state relative-caret-position="426">
+          <caret line="93" column="86" lean-forward="false" selection-start-line="93" selection-start-column="86" selection-end-line="93" selection-end-column="86" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/toutiao/resources/user/profile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="863">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/settings/default.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="64" column="54" lean-forward="true" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/5_qiniu/test_upload_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        <state relative-caret-position="318">
+          <caret line="53" column="46" lean-forward="true" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
           <folding />
         </state>
       </provider>

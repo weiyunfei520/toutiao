@@ -33,3 +33,33 @@ class PhotoResource(Resource):
             'photo_url': '{}/{}'.format(current_app.config['QINIU_DOMAIN'], file_name)
         }
         return ret_dict
+
+from cache.user import UserProfileCache
+class CurrentUserResource(Resource):
+    # 检查登录
+    method_decorators = [login_required]
+    # 请求钩子 utils.middlewares.jwt_authentication已经注册生效了：把token中的user_id写入g对象中
+    def get(self):
+        # 返回当前用户信息
+        # 从缓存和持久化存储中获取
+        # 代码执行到这里时，就应该已经有g.user_id
+        ret = UserProfileCache(user_id=g.user_id).get()
+        print('=')
+        print(ret)
+        ret_dict = {
+            'user_id': g.user_id,
+            'user_name': ret['name'],
+            'user_mobile': ret['mobile'],
+            'user_photo': ret['profile_photo'],
+            'certificate': ret['certificate'],
+            'introduction': ret['introduction'],
+            'arts_count': 0,
+            'following_count': 0
+        }
+        return ret_dict
+
+    def delete(self):
+        ret = UserProfileCache(user_id=g.user_id).exists()
+        if ret:
+            UserProfileCache(user_id=g.user_id).clear()
+        return {'message': 'ok'}

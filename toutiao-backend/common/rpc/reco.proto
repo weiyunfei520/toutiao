@@ -1,0 +1,41 @@
+// 1. 声明使用proto3语法
+syntax = "proto3";
+
+// 3. 声明请求参数UserRequest对象的数据结构
+message UserRequest {
+    string user_id = 1;       //# 用户id str类型
+    int32 channel_id = 2;    //# 频道id int类型
+    int32 article_num = 3;    //# 推荐的文章数量 向推荐系统索要推荐文章的数量 int类型
+    int64 time_stamp = 4;    //# 推荐的时间戳 单位秒 int类型
+    // 这里的1234 表示序号，在传输时只会出现序号，不会出现user_id，省空间
+    // 除了repeated类型（对应python list）序号从0开始，其他都是从1开始
+}
+
+// 6. 声明ArticleResponse.recommends.track中的数据结构
+message Track {
+    string click = 1; //            # 用户点击行为的埋点参数 str类型
+    string collect = 2; //          # 用户收藏的埋点参数 str类型
+    string share = 3; //            # 用户分享的埋点参数 str类型
+    string read = 4; //            # 用户进入文章详情的埋点参数 str类型
+}
+
+// 5. 声明ArticleResponse.recommends中的数据结构
+message Article {
+    int64 article_id = 1; //      # 文章id int类型
+    Track track = 2; // # 关于文章的埋点数据，只是普通嵌套，只需要声明指向的数据结构，无需声明proto原生类型
+}
+
+// 4. 声明返回的数据对象ArticleResponse的第一层数据
+message ArticleResponse {
+    string expousre = 1; //         # 曝光埋点数据 str类型
+    int64 time_stamp = 2; //       # 推荐的时间戳 单位秒 int类型
+    repeated Article recommends = 3; // repeated类型 对应python list
+    // Article 指向 说明recommends中数据结构的声明
+}
+
+
+// 2. 声明 调用的函数名 和 请求参数名 以及 返回数据响应名
+service UserRecommend { // 声明 使用名为 UserRecommend 的服务，对应python就是类名
+    rpc user_recommend(UserRequest) returns(ArticleResponse) {} // 最后有个 {} 千万别忘了
+    // rpc 方法名(请求参数对象) returns(返回的数据对象)
+}
